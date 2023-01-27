@@ -1,0 +1,91 @@
+@import "reset";
+@import "breakpoints";
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    @extend %flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+}
+
+.container {
+    margin: 2rem;
+    max-width: 23rem;
+}
+
+.text {
+    h1, p, span {
+        word-spacing: 0.05em;
+    }
+    h1 {
+        font-weight: 200;
+        line-height: 25px;
+        font-size: 25px;
+        opacity: 0.7;
+        padding-bottom: 20px;
+        text-align: center;
+        span {
+            font-weight: 600;
+        }
+    }
+    p {
+        font-weight: 200;
+        font-size: 15px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.card {
+    max-width: 23rem;
+    height: 8rem;
+    padding: 15px;
+
+
+    h2 {
+        font-weight: 600;
+        padding-bottom: 8px;
+        opacity: 0.7;
+    }
+    p {
+        font-size: 13px;
+        opacity: 0.5;
+    }
+    img {
+        float: right;
+        padding-top: 20px;
+        width: 40px;
+    }
+}
+%cards {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.card-1 {
+    border-top: #49cecf solid 3px;
+    @extend %cards;
+}
+.card-2 {
+    border-top: #d8575b solid 3px;
+    @extend %cards;
+}
+
+.card-3 {
+    border-top: #f0ab57 solid 3px;
+    @extend %cards;
+}
+
+.card-4 {
+    border-top: #579ce8 solid 3px;
+    @extend %cards;
+}
+
+
+
